@@ -2,3 +2,4 @@ flask
 python-dotenv
 flask-smorest
 flask-jwt-extended
+pyodbc
