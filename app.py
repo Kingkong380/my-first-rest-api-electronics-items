@@ -4,6 +4,7 @@ from Resources.user import blp as UserBluePrint
 from flask_smorest import Api
 from flask_jwt_extended import JWTManager
 from BlockedTokenList import BlockedTokenList
+
 app=Flask(__name__)
 
 app.config["PROPAGATE_EXCEPTIONS"]=True
