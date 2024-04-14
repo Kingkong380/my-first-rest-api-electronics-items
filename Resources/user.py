@@ -38,7 +38,6 @@ class UserLogOut(MethodView):
         BlockedTokenList.add(jti)
         return {'message':'Successfully logged out'}
         
-
 @blp.route('/user')
 class User(MethodView):
     def __init__(self):
@@ -59,6 +58,3 @@ class User(MethodView):
         if self.userdata.delete_user(id):
             return {'message':'User deleted successfully.'}, 200
         abort(403,message="Cannot find entered ID.")
-
-
-        
